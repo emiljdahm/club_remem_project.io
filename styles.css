@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.inconsolata inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 0 1000;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html {
+}
+body {
+    font-family: inconsolata, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 90vh;
+    background-color: white;
+}
+
+button {
+    padding: .5rem;
+    background-color: #6FC38C;
+    color: white;
+    border-radius: 25px;
+    border: white 2px solid;
+}
+
+button:hover {
+    padding: .5rem;
+    background-color: #6FC38C;
+    color: white;
+    border-radius: 25px;
+    border: white 2px solid;
+    opacity: .75;
+}
+
+/*NAVBAR*/
+
+nav.nav-mobile {
+    background-color: #4BB46F;
+    padding: 1.5rem;
+    color: white;
+
+}
+div.nav-container-mobile {
+    display: flex;
+    justify-content: center;
+
+}
+
+ul.navbar-mobile li {
+    font-size: 1.25rem;
+    border: white 2px solid;
+    border-radius: 25px;
+    padding: 1.25rem;
+
+}
+
+h1.nav-title-mobile {
+    margin-left: 1.25rem;
+
+}
+
+h1.nav-title {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    max-width: fit-content;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+
+
+}
+div.nav-container{
+    display: flex;
+    text-align: center;
+    height: 2rem;
+    background-color: #4BB46F;
+    padding: 2rem;
+    color: white;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.25rem;
+    margin: 0 1.25rem;
+}
+
+nav ul a {
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    text-decoration: none; 
+    color: white;
+}
+
+nav ul li a:hover {
+    opacity: .5;
+
+}
+
+/*HERO*/
+
+div.hero {
+    background-image: url(media/bikehero.jpg);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    max-width: 100%;
+    font-weight: 300;
+    border-bottom: #4BB46F 4px solid;
+}
+
+div.container-one {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-items: center;
+    margin: 4rem;
+    padding: 3rem;
+    border: 3px #6FC38C solid;
+    max-width: 300px;
+    line-height: 2rem;
+    color: white;
+    background-color: hsla(255, 255, 255, 0.5);
+    border-radius: 25px;
+    background-color: #4BB46F;
+}
+
+
+/*EVENTS CONTENT*/
+
+h1.event-maintxt, h2.event-subtxt {
+    padding: 1rem;
+    text-align: center;
+    background: none;
+}
+div.events-cover{
+
+}
+div.events-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    color: white;
+
+}
+div.event-content {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #6FC38C;
+    border-radius: 60px 25px;
+    margin: 3rem;
+
+}
+
+div.event-content img {
+    max-width: 280px;
+    max-height: 220px;
+    margin: 1.5rem;
+    border-radius: 25px;
+}
+
+div.event-content img:hover {
+    opacity: .5;
+}
+
+div.event-content p {
+  margin-bottom: 1rem;
+}
+
+/* CTA ONE WEEK*/
+
+div.join-cta {
+    text-align: start;
+    height: 16rem;
+    padding: 6rem;
+    background-image: url(media/wp9127471.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4BB46F 5px solid;
+    line-height: 2rem;
+    color: white;
+}
+
+div.join-cta h1 {
+    margin-bottom: .5em;
+}
+div.join-cta h2 {
+    margin-bottom: .5em;
+}
+
+
+/* Lessons*/
+
+
+/*footer*/
+div.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    padding: 2rem;
+    
+}
+
+div.foot-container ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.foot-container ul li {
+    margin: auto 1rem;
+    max-width: 100%;
+}
+div.foot-container p {
+    font-size: .75rem;
+}
+
+
+/* Queries */
+@media only  screen and (max-width: 986px) {
+    nav ul li {
+        margin: .0575rem;
+    }
+}
+    h1.nav-title {
+        display: flex;
+        flex-direction: row;
+        max-width: fit-content;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: white;
+        font-size: 1.5rem;  
+    }
+    div.nav-container {
+        padding: 2.5rem;
+        max-width: 100%;
+    }
+    div.container-one {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: center;
+        margin: 4rem;
+        padding: 3rem;
+        border: 3px #6FC38C solid;
+        max-width: 300px;
+        line-height: 2rem;
+        color: white;
+        background-color: hsla(255, 255, 255, 0.5);
+        border-radius: 25px;
+        background-color: #4BB46F;
+
+}
+
+@media only  screen and (max-width: 1460px) {
+nav ul li {
+    margin: .575rem;
+}
+h1.nav-title {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+}
+@media only  screen and (max-width: 1696px) {
+
+    div.event-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #6FC38C;
+        border-radius: 60px 25px;
+        margin: 2rem;
+    
+    
+    }
+    div.event-content {
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #6FC38C;
+        border-radius: 25px;
+        margin: 1rem;
+    
+    
+    }
+    
+    div.event-content img {
+        max-width: 480px;
+        max-height: 420px;
+        margin: 1.5rem;
+        border-radius: 25px;
+    }
+
+}
+@media only  screen and (min-width: 1016px) {
+    nav.nav-mobile {
+        display: none;
+    }
+    nav.nav-mobile img {
+        max-width: 50px;
+        max-height: fit-content;
+        font-size: 3rem;
+    
+    }
+}
+@media only  screen and (max-width: 1015px) {
+    nav.nav-web {
+        display: none;
+    }
+    div.container-one {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: center;
+        margin: 1rem;
+        padding: 2rem;
+        border: 3px #6FC38C solid;
+        max-width: 90%;
+        max-height: 50%;
+        line-height: 2rem;
+        color: white;
+        background-color: hsla(255, 255, 255, 0.5);
+        border-radius: 25px;
+        background-color: #4BB46F;
+    }
+    
+
+
+}
